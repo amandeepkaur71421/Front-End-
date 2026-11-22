@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amandeep Kaur | Front-End Web Developer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+    body {
+      background: #0d1117;
+      color: #f0f6fc;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container { max-width: 960px; margin: 0 auto; text-align: center; }
+
+    /* Header */
+    header { margin-bottom: 50px; }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; color: #ffffff; }
+    .subtitle { font-size: 1.15rem; color: #8b949e; max-width: 600px; margin: 0 auto 25px; }
+    .badge {
+      display: inline-block;
+      background: rgba(46, 213, 115, 0.15);
+      color: #2ed573;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    /* Project Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); border-color: #2ed573; }
+    .card-icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .card h2 { font-size: 1.35rem; margin-bottom: 10px; color: #ffffff; }
+    .card p { font-size: 0.95rem; color: #8b949e; margin-bottom: 24px; }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background: #2ed573;
+      color: #0d1117;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    /* Contact Section */
+    .contact-box {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 16px;
+      padding: 36px 24px;
+    }
+    .contact-box h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    .contact-box p { color: #8b949e; margin-bottom: 24px; }
+    .contact-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .btn-outline {
+      background: transparent;
+      color: #f0f6fc;
+      border: 1px solid #30363d;
+    }
+    .btn-outline:hover { border-color: #2ed573; color: #2ed573; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge">Available for Freelance Projects</div>
+      <!-- EDIT HERE: Your Name -->
+      <h1>Amandeep Kaur</h1>
+      <p class="subtitle">
+        Front-End Web Developer specializing in clean, fast, mobile-friendly websites using HTML, CSS & JavaScript.
+      </p>
+    </header>
+
+    <section class="grid">
+      <!-- Project 1: Jewellery -->
+      <div class="card">
+        <div>
+          <div class="card-icon">💎</div>
+          <h2>Jewellery Store Website</h2>
+          <p>Elegant product showcase layout designed for boutiques, jewellery brands, and online catalogs.</p>
+        </div>
+        <a href="jewellery.html" target="_blank" class="btn">View Live Demo →</a>
+      </div>
+
+      <!-- Project 2: Restaurant -->
+      <div class="card">
+        <div>
+          <div class="card-icon">🍽️</div>
+          <h2>Restaurant & Café Website</h2>
+          <p>Modern hospitality template featuring menu highlights, gallery sections, and reservation info.</p>
+        </div>
+        <a href="restaurant.html" target="_blank" class="btn">View Live Demo →</a>
+      </div>
+
+      <!-- Project 3: Electronics -->
+      <div class="card">
+        <div>
+          <div class="card-icon">📱</div>
+          <h2>Electronics Shop Website</h2>
+          <p>Clean tech storefront built to display gadgets, specifications, and featured deals clearly.</p>
+        </div>
+        <a href="electronics.html" target="_blank" class="btn">View Live Demo →</a>
+      </div>
+    </section>
+
+    <section class="contact-box">
+      <h2>Need a Website for Your Business?</h2>
+      <p>I build custom, affordable websites for restaurants, shops, and local businesses. Message me for a free quote.</p>
+      <div class="contact-links">
+        <!-- EDIT HERE: Replace 34600000000 with your real WhatsApp number (with country code, no +) -->
+        <a href="https://wa.me. +631467417" target="_blank" class="btn">
+          💬 Chat on WhatsApp
+        </a>
+        <!-- EDIT HERE: Replace with your real email -->
+        <a href="mailto:amandeepkaur71421@gmail.com" class="btn btn-outline">
+          ✉️ Send an Email
+        </a>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
